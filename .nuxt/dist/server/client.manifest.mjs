@@ -1,1 +1,0 @@
-export { default } from "file:///Users/jim_bien/VScode/portfolio-jm-gsap/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

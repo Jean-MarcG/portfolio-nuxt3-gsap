@@ -55,18 +55,11 @@
                     <div class="h1 secondary">Based</div>
                 </div>
             </div>
-            
+
             <div class="nav-item contact">
-                <div>Contact</div>
-                <div class="id">03</div>
-            </div>
-            
-            <div class="reveal">
-                <div class="h1 secondary">in Toulouse</div>
-            </div>
-            
-            <div class="hr"></div>
-            
+                    <div>Contact</div>
+                    <div class="id">03</div>
+                </div>
         </div>
     </section>
 </template>

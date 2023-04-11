@@ -36,37 +36,17 @@
                     <div class="id">02</div>
                 </div>
             </div>
-            
+
             <div class="hr"></div>
-            
+
             <div class="row">
                 <div class="reveal">
                     <div class="h1 secondary">Frontend</div>
                 </div>
                 <div class="reveal">
-                    <div class="h1 secondary">Developer &nbsp;&nbsp;</div>
+                    <div class="h1 secondary">Frontend</div>
                 </div>
             </div>
-            
-            <div class="hr"></div>
-            
-            <div class="row">
-                <div class="reveal">
-                    <div class="h1 secondary">Based</div>
-                </div>
-            </div>
-            
-            <div class="nav-item contact">
-                <div>Contact</div>
-                <div class="id">03</div>
-            </div>
-            
-            <div class="reveal">
-                <div class="h1 secondary">in Toulouse</div>
-            </div>
-            
-            <div class="hr"></div>
-            
         </div>
     </section>
 </template>

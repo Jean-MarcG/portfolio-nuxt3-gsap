@@ -60,13 +60,10 @@
                 <div>Contact</div>
                 <div class="id">03</div>
             </div>
-            
+
             <div class="reveal">
                 <div class="h1 secondary">in Toulouse</div>
             </div>
-            
-            <div class="hr"></div>
-            
         </div>
     </section>
 </template>
