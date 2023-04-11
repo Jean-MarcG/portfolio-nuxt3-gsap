@@ -72,9 +72,8 @@
 </template>
 
 <style lang="scss">
-.HeroFront {
-    display: flex;
-    height: 100vh;
-    background: #b2b2a8;
+* {
+    margin: 0;
+    background-color: #55555555;
 }
 </style>
