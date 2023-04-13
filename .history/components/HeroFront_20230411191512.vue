@@ -1,42 +1,3 @@
-<script setup>
-import { onMounted, onUnmounted, ref } from 'vue';
-import gsap from 'gsap';
-
-const main = ref();
-let ctx;
-
-
-onMounted(() => {
-    ctx = gsap.context((self) => {
-        const tl = gsap.timeline();
-        tl.from(".intro > div", 1.8, {
-            opacity: 0,
-            y: -100,
-            ease: "Power4.out",
-            delay: 1,
-            stagger: {
-                amount: 0.3,
-            }
-        });
-        
-        tl.from(".hr", 1.8, {
-            width: 0,
-            ease: "power4.out",
-            delay: 1,
-            stagger: {
-                amount: 0.3,
-            },
-        },
-        "-=1.5"
-        );
-    }, main.value);
-});
-
-onUnmounted(() => {
-    ctx.revert(); // <- Easy Cleanup!
-});
-</script>
-
 <template>
     <section class="HeroFront">
         <div class="container">
@@ -132,36 +93,15 @@ onUnmounted(() => {
         overflow: hidden;
     }
     .reveal div { position: absolute; line-height: 1.8em; }
-    .h1 { font-size: 6.4em; font-weight: 400; letter-spacing: -0.02em;
-        @media (max-width: 900px) { font-size: 2em; } }
-        .h1 span { font-style: italic; }
-        .secondary { font-family: 'PP Neue Montreal'; }
-        p {
-            padding: 0.8em;
-            font-family: 'PP Neue Montreal';
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: uppercase;
-            @media (max-width: 900px) { font-size: 8px; }
-        }
-        .white-space { width: 100; height: 120px;}
-        .nav-item {
-            width: 240px;
-            border-radius: 0 0 40px 0;
-            margin: 0.6em;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-        .nav-item > div {
-            padding: 1em;
-            font-family: 'PP Neue Montreal'; 
-            font-size: 14px;
-        }
-        .about { background: #fcefdf; }
-        .projects { background: #db4c44; }
-        .project > div { background: #fff; }
-        .contact { background: #e7a92b; }
-        .id { margin-right: 0.8em; }
+    .h1 { font-size: 6.4em; font-weight: 400; letter-spacing: -0.2em }
+    .h1 span { font-style: italic; }
+    .secondary { font-family: 'PP Neue Montreal'; }
+    p {
+        padding: 0.8em;
+        font-family: 'PP Neue Montreal';
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
     }
+}
 </style>

@@ -6,13 +6,11 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "commit": "./node_modules/cz-customizable/standalone.js"
-    },
+    "postinstall": "nuxt prepare"
+  },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@volar-plugins/vetur": "latest",
-    "cz-customizable": "^7.0.0",
     "nuxt": "^3.3.3"
   },
   "dependencies": {

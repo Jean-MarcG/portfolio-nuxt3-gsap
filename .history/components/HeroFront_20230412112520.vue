@@ -1,14 +1,15 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const main = ref();
 let ctx;
+const tl = gsap.timeline();
 
-
-onMounted(() => {
+onMounted() => {
     ctx = gsap.context((self) => {
-        const tl = gsap.timeline();
         tl.from(".intro > div", 1.8, {
             opacity: 0,
             y: -100,
@@ -29,7 +30,24 @@ onMounted(() => {
         },
         "-=1.5"
         );
-    }, main.value);
+    });
+}, main.value);
+
+onMounted(() => {
+    ctx = gsap.context((self) => {
+        const boxes = self.selector('.box');
+        boxes.forEach((box) => {
+            gsap.to(box, {
+                x: 150,
+                scrollTrigger: {
+                    trigger: box,
+                    start: 'bottom bottom',
+                    end: 'top 20%',
+                    scrub: true,
+                },
+            });
+        });
+    }, main.value); // <- Scope!
 });
 
 onUnmounted(() => {

@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+}
+.row { display: flex; justify-content: space-between; }
+.hr { width: 100%; height: 1px; background: var(--black);}
+.reveal {
+    width: 500px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+}
+.reveal div { position: absolute; line-height: 1.8em; }
+.h1 { font-size: 6.4em; font-weight: 400; letter-spacing: -0.2em }

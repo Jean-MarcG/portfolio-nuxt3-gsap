@@ -6,7 +6,7 @@ const main = ref();
 let ctx;
 
 
-onMounted(() => {
+onMounted() => {
     ctx = gsap.context((self) => {
         const tl = gsap.timeline();
         tl.from(".intro > div", 1.8, {
@@ -29,7 +29,24 @@ onMounted(() => {
         },
         "-=1.5"
         );
-    }, main.value);
+    });
+}, main.value);
+
+onMounted(() => {
+    ctx = gsap.context((self) => {
+        const boxes = self.selector('.box');
+        boxes.forEach((box) => {
+            gsap.to(box, {
+                x: 150,
+                scrollTrigger: {
+                    trigger: box,
+                    start: 'bottom bottom',
+                    end: 'top 20%',
+                    scrub: true,
+                },
+            });
+        });
+    }, main.value); // <- Scope!
 });
 
 onUnmounted(() => {
