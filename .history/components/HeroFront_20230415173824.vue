@@ -45,20 +45,6 @@
         },
         "-=2"
       );
-
-      tl.from(
-        ".nav-item",
-        {
-          duration: 1.8,
-          opacity: 0,
-          y: 100,
-          ease: "power4.out",
-          stagger: {
-            amount: 0.3,
-          },
-        },
-        "-=2"
-      );
     }, main.value);
   });
 
@@ -75,7 +61,7 @@
           <div class="h1 primary">J<span>e</span>an-M<span>a</span>rc</div>
         </div>
         <div class="reveal">
-          <div class="h1 primary">Ga<span>g</span>ne<span>bi</span>en</div>
+          <div class="h1 primary">To<span>u</span>l<span>ou</span>se</div>
         </div>
       </div>
 

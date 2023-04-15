@@ -50,7 +50,6 @@
         ".nav-item",
         {
           duration: 1.8,
-          opacity: 0,
           y: 100,
           ease: "power4.out",
           stagger: {
